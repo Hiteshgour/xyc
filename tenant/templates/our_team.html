@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Tenant members</title>
+</head>
+<body>
+
+<h1>{{tenant.name}}</h1>
+
+<h2> Our Members</h2>
+
+<ul>
+    {% for member in members %}
+        <li>{{member.name}}</li>
+    {% endfor %}
+</ul>
+
+</body>
+</html>
